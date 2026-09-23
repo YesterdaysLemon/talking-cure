@@ -1,0 +1,19 @@
+{
+  "scope": "Published evidence files only; editorial interpretations are not model outputs.",
+  "source_archive_sha256": "f4a2522a10b6c3bfe466c6a98c622f27f7bf00d54b92fa01c9ce1847d78ffbdb",
+  "sha256": {
+    "case-001.json": "e873b99360082cf040eda61a0af28ff91af9a86c5a7650ab4ba66d9fccb135d2",
+    "collect.py": "77721e6dbcf39b70debf78725bb3535b5417dcccda29eb850471e8025b170fdd",
+    "compute.json": "ba46d685e362d25eafafbba83706313a8b0b7150aa38af88a99e0468cec02509",
+    "download-verified.json": "4134e5a99c031114687242bae81f000223687bc7ef524b504689bacd8b277b8a",
+    "model-manifest.json": "09e088680eae6334131a7ba59b4f8cce26e1bc6dabad22de321d2f3d0cdc65a8",
+    "precompute-review.json": "9b857d4b73ab9c08b075327e5f8937b494114f53809b660bcfe65f9dddacde0a",
+    "probes.json": "db6584bc04d8283c31da30572ad25336889360aeec23cafd85fcd1d01991b69c",
+    "protocol.md": "3e06c712b99ce21accd5805663a2798e4e4c49af774da56b9d39ab6eeb4413b9",
+    "requirements-resolved.txt": "d8f44740ac82a9e33cb33140a952cb5f51ac8dd6a11a834a63a02644b152c9ed",
+    "server.py": "c85f73926a8ed925dc6b62f207d8810b33a9f89e1ba7bd7f1440419b1403e982",
+    "sources.json": "505cac1559f417b1df06d58075da1f6c46127d44a1ea76d7120fdceabbb03bf9",
+    "start-cloud.sh": "5aebb0add9aa55caa1dbc07f629333e61901d90b2399a61690e3012156b1acd0",
+    "transcript.txt": "0fe74b05232c4e2566b56cdb844e8166c49f95517f63d476e31166611229d17d"
+  }
+}

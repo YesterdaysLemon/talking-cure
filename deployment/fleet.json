@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "host": {
+    "name": "Alireza's VPS",
+    "platform": "Ubuntu + Docker",
+    "edge": "Caddy",
+    "manager": "Deploy Manager"
+  },
+  "manager": {
+    "hostname": "deploy.alirezaafshan.com",
+    "port": 9019,
+    "repository": "YesterdaysLemon/deploy-manager",
+    "branch": "main",
+    "probeIntervalMs": 30000,
+    "probeTimeoutMs": 2500
+  },
+  "apps": [
+    {
+      "id": "talking-cure",
+      "name": "The Talking Cure",
+      "description": "An experimental journal of machine speech, complete interviews, and philosophical readings.",
+      "kind": "archive",
+      "repository": "YesterdaysLemon/talking-cure",
+      "branch": "main",
+      "secretEnv": "TALKING_CURE_DEPLOY_WEBHOOK_SECRET",
+      "repoDir": "/opt/talking-cure/app",
+      "repoUser": "deploy-manager",
+      "imageName": "talking-cure",
+      "containerName": "talking-cure",
+      "candidateContainerName": "talking-cure-candidate",
+      "publicPort": 3260,
+      "candidatePort": 3261,
+      "containerPort": 8080,
+      "healthPath": "/healthz",
+      "hostname": "cure.alirezaafshan.com"
+    }
+  ]
+}

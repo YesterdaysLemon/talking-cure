@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-23T22:55:35.299016+00:00",
+  "local_preview": "http://127.0.0.1:8790",
+  "browser": "Microsoft Edge via Playwright CLI",
+  "viewports": [
+    1280,
+    390,
+    320
+  ],
+  "checks": [
+    "four views at each width: no horizontal overflow",
+    "expanded record wraps on narrow viewport",
+    "all four lenses selectable",
+    "probe filter and cross-view evidence link",
+    "actual JSON download hash matches original",
+    "all 34 cloud records equal local records",
+    "all model files verified before loading",
+    "quote and context chain integrity checks pass"
+  ],
+  "console_errors": 0,
+  "repairs": [
+    "long generation hash wraps",
+    "evidence links reset probe filter"
+  ],
+  "deployment": "not yet deployed"
+}

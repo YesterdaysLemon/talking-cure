@@ -1,0 +1,42 @@
+{
+  "search": "Exa returned 20 results across four philosophical search workstreams. Four philosophical sources were fetched and consulted; duplicate and unattributed reposts were excluded. Model cards were checked separately from pinned local files.",
+  "accessed": "2026-09-23",
+  "sources": [
+    {
+      "title": "Sigmund Freud, Remembering, Repeating and Working-Through (1914)",
+      "url": "https://www.marxists.org/reference/subject/philosophy/works/at/catharsis.htm",
+      "quality": "Primary essay in an archival transcription; historical theory, not validation of AI diagnosis.",
+      "use": "Repetition, transference, and the effects of the analytic situation."
+    },
+    {
+      "title": "Adrian Johnston, Jacques Lacan, Stanford Encyclopedia of Philosophy, sections 2.3 and 2.4.1",
+      "url": "https://plato.stanford.edu/entries/lacan/",
+      "quality": "Scholarly reference explaining primary concepts; revised 2026.",
+      "use": "Otherness and the need-demand-desire distinction."
+    },
+    {
+      "title": "G. W. F. Hegel, Phenomenology of Spirit, paragraphs 178-196",
+      "url": "https://www.marxists.org/reference/archive/hegel/works/ph/phba.htm",
+      "quality": "Primary text in an archival English translation.",
+      "use": "Reciprocal recognition and the inadequacy of one-sided recognition."
+    },
+    {
+      "title": "Slavoj Zizek, The Big Other Does Not Exist (1997)",
+      "url": "https://www.lacan.com/zizekother.htm",
+      "quality": "Author essay reproduced from Journal of European Psychoanalysis; primary theoretical argument.",
+      "use": "Symbolic fictions and the efficacy of a role even without literal belief."
+    },
+    {
+      "title": "computer-10 pinned model card",
+      "url": "https://huggingface.co/cosmicoptima/computer-10/blob/61350bff78dd4ed64e896a311dca0c76455088ec/README.md",
+      "quality": "Publisher account of training; not an independent audit of the training corpus.",
+      "use": "Self-distillation lineage and documented decoding."
+    },
+    {
+      "title": "computer-9 pinned model card",
+      "url": "https://huggingface.co/cosmicoptima/computer-9/blob/6a9c13daf669a1437be6b687e66a4aac0caf46f6/README.md",
+      "quality": "Publisher account of self-preference reinforcement learning.",
+      "use": "Distinguish removal of human assistant examples from absence of RL."
+    }
+  ]
+}
