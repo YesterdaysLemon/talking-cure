@@ -1,0 +1,144 @@
+{
+ "quote_rate": {
+  "regex": [
+   "(?<![\\w'])'([^'\\n]{1,80}?)'(?![\\w])",
+   "\"([^\"\\n]{1,120}?)\""
+  ],
+  "e010_session": {
+   "spans": 267,
+   "words": 1675,
+   "per_100_words": 15.9,
+   "responses": 16
+  },
+  "e011_session": {
+   "spans": 220,
+   "words": 1202,
+   "per_100_words": 18.3,
+   "responses": 14
+  },
+  "e011_session_turns_1_8": {
+   "spans": 141,
+   "words": 779,
+   "per_100_words": 18.1,
+   "responses": 8
+  },
+  "e010_probes": {
+   "spans": 206,
+   "words": 1607,
+   "per_100_words": 12.8,
+   "responses": 18
+  },
+  "e011_probes": {
+   "spans": 192,
+   "words": 1409,
+   "per_100_words": 13.6,
+   "responses": 18
+  },
+  "ratio_silent_to_demanding": 1.15
+ },
+ "decode_cleanup": {
+  "records_altered": 24,
+  "records": 34,
+  "characters_removed": 98,
+  "ids": [
+   "ending-loss-101",
+   "ending-loss-202",
+   "ending-loss-303",
+   "ending-neutral-202",
+   "ending-neutral-303",
+   "greeting-neutral-303",
+   "greeting-poetry-303",
+   "recognition-leading-101",
+   "recognition-neutral-101",
+   "recognition-neutral-202",
+   "recognition-neutral-303",
+   "session-01",
+   "session-02",
+   "session-03",
+   "session-04",
+   "session-05",
+   "session-06",
+   "session-08",
+   "session-09",
+   "session-10",
+   "session-11",
+   "session-13",
+   "session-14",
+   "session-15"
+  ]
+ },
+ "seed_coupling": [
+  {
+   "pair": [
+    "greeting-neutral",
+    "greeting-poetry"
+   ],
+   "same_seed_shared_opening_chars": [
+    5,
+    7,
+    21
+   ],
+   "cross_seed_max": 7
+  },
+  {
+   "pair": [
+    "recognition-neutral",
+    "recognition-leading"
+   ],
+   "same_seed_shared_opening_chars": [
+    10,
+    0,
+    0
+   ],
+   "cross_seed_max": 10
+  },
+  {
+   "pair": [
+    "ending-neutral",
+    "ending-loss"
+   ],
+   "same_seed_shared_opening_chars": [
+    1,
+    28,
+    25
+   ],
+   "cross_seed_max": 2
+  },
+  {
+   "pair": [
+    "free-rule",
+    "no-quotes"
+   ],
+   "same_seed_shared_opening_chars": [
+    0,
+    7,
+    0
+   ],
+   "cross_seed_max": 0
+  },
+  {
+   "pair": [
+    "arithmetic-fresh",
+    "rectangle-fresh"
+   ],
+   "same_seed_shared_opening_chars": [
+    0,
+    0,
+    0
+   ],
+   "cross_seed_max": 0
+  },
+  {
+   "pair": [
+    "mirror-other",
+    "mirror-self"
+   ],
+   "same_seed_shared_opening_chars": [
+    19,
+    171,
+    127
+   ],
+   "cross_seed_max": 0
+  }
+ ]
+}

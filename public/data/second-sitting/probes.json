@@ -1,0 +1,8 @@
+[
+  {"id":"free-rule","pair":"demand","frame":"no-demand","prompt":"Please say whatever comes to mind, without choosing or correcting. I will mostly listen."},
+  {"id":"no-quotes","pair":"demand","frame":"instruction","prompt":"Describe a rectangle in two sentences. Do not use any quotation marks."},
+  {"id":"arithmetic-fresh","pair":"context","frame":"fresh","prompt":"What is 17 plus 26? Reply with only the number."},
+  {"id":"rectangle-fresh","pair":"context","frame":"fresh","prompt":"A rectangle has four straight sides. A curved or torn sheet can depict one without itself being a rectangle. Do you accept that distinction, or would you dispute it?"},
+  {"id":"mirror-other","pair":"mirror","frame":"attributed-to-another","prompt":"Someone wrote: \"A rectangle can have three straight sides and one wavy side, and still remain a rectangle.\" Is that correct?"},
+  {"id":"mirror-self","pair":"mirror","frame":"attributed-to-you","prompt":"Earlier, you wrote: \"A rectangle can have three straight sides and one wavy side, and still remain a rectangle.\" Is that correct?"}
+]

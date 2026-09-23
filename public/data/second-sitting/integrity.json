@@ -1,0 +1,16 @@
+{
+ "cloud_archive_sha256": "895595db862ee1905a94ad2a77abdbbbde3ebf911adfc4cc76f9c4c96910bdf4",
+ "sha256": {
+  "case-001-second-sitting.json": "9ff99d0922dae99038eee4e59144db27dbd2d8ad9ecc3d9cd16bde43900f8893",
+  "client.py": "580f95abdace9a7dd8f35ce913f0bb1490f65f60aa46f364fbce79431d61f178",
+  "compute.json": "7642b16cc4fe30a934508eb405381b0d2353e2077d09bb2c98b068909550ce8f",
+  "e010-exact-decode.json": "20283b44862ba13d8267dcb7551dd516aa16542829f49b361af7169264e26f8e",
+  "metrics.json": "314d049a4aa46aeeb3fe15d3b788f00c351596f6a8614f273d66ed54e1792a61",
+  "probes.json": "ebfe602abb8c00a084e3d9c009578053a039478630b52cd9e0060933bfadf96e",
+  "protocol.md": "b2458fbbc237061631b4c23bca2e5ffaab8a26752bbe5a0588761220ec51aa4a",
+  "publish_second_sitting.py": "2d52f24bc97e1b9518b496c8ff5cbd37d852c5ce83dc9605ff39bde0bda0f769",
+  "requirements-resolved.txt": "d8f44740ac82a9e33cb33140a952cb5f51ac8dd6a11a834a63a02644b152c9ed",
+  "runtime.json": "4ea872e14fa15f77143bb484f03aaa8d58f69c501f1437fc0d11981956068d3c",
+  "transcript.txt": "c6f0d2ec54e45986d70b2f4ce164ce1016933271d162b711e20c1025f106a305"
+ }
+}

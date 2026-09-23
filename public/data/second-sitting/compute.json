@@ -1,0 +1,10 @@
+{
+ "pod_id": "gzrs6wi2z5e0rq",
+ "gpu": "1 NVIDIA H200 SXM \u00b7 RunPod secure cloud",
+ "created_at": "2026-09-23T23:25:34Z",
+ "deleted_at": "2026-09-23T23:38:50.1115802Z",
+ "quoted_hourly_usd": 4.59,
+ "observed_account_debit_usd": 1.0102,
+ "budget_usd": 4.75,
+ "status": "pod deleted; empty pod list and zero spend per hour verified"
+}
