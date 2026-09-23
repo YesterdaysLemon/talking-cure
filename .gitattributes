@@ -1,2 +1,2 @@
 * text=auto eol=lf
-public/data/** -text
+public/data/** -text whitespace=cr-at-eol
