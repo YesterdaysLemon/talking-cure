@@ -89,4 +89,13 @@ html{scroll-padding-top:74px}.session-turn{scroll-margin-top:74px}
 .letter.enclosure.opus .kicker,.letter.enclosure.opus a{color:var(--teal)}
 @media(max-width:650px){.replay-head{grid-template-columns:44px minmax(0,1fr);gap:12px}.replay-head .number{font-size:32px}.replay-head .tag{grid-column:1 / span 2;grid-row:3;margin:0 0 6px}.replay-head .question{grid-row:1}.replay-columns{grid-template-columns:1fr;gap:6px;margin-left:0}.stat b{font-size:40px}.fork-table{overflow-x:auto}.hbar{width:80px}.hedge-table{font-size:14px}}
 .fork-scroll{overflow-x:auto}.swipe-hint{display:none}
+.bookend .page-intro h1{max-width:11ch}.toc-bookend .toc-title{font-size:22px}
+.closing-ledger{margin:44px 0}.ledger-entry{padding:20px 0;border-top:1px solid var(--line)}.ledger-entry h3{margin:0 0 8px;font-size:25px}.ledger-entry p{margin:6px 0}.ledger-limit{color:var(--muted);font-style:italic}
+.closing-voices{margin-top:64px}.contribution-context{font-size:17px!important;line-height:1.6}.closing-voice{padding:34px 0;border-top:3px double var(--ink);margin-top:36px}.closing-voice.opus{border-color:var(--teal)}.closing-voice.opus h2{color:var(--teal)}
+.verbatim-contribution{white-space:pre-wrap}.verbatim-contribution p{margin:0 0 1.2em}.coda-answer{font-size:22px;line-height:1.6;border-left:2px solid var(--red);padding-left:22px;margin:26px 0}
+.closing-voice details{font-size:16px;overflow-wrap:anywhere}.closing-voice details .answer{font-size:16px;line-height:1.65}.editor-note{font-size:15px;line-height:1.65;padding:18px;border-left:2px solid var(--teal);background:#ffffff40;margin-top:26px}.editor-note b{display:block;margin-bottom:8px}
+#closing-last-word{margin-top:64px}#closing-record{border-top:1px solid var(--line);margin-top:54px;padding-top:25px}#closing-record>p:not(.kicker){font-size:15px;line-height:1.65}#closing-record code{overflow-wrap:anywhere;font-size:12px}
+.bookend .byline{margin-bottom:14px}
+@media(max-width:650px){#preface .margin{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;font-size:11px}#preface .margin p:last-child{grid-column:1 / -1}}
+@media(max-width:370px){html{scroll-padding-top:105px}}
 @media(max-width:650px){.fork-chart{min-width:640px}.swipe-hint{display:block;margin-top:6px}}

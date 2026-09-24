@@ -1,0 +1,17 @@
+{
+  "model": "cosmicoptima/computer-10",
+  "revision": "61350bff78dd4ed64e896a311dca0c76455088ec",
+  "precision": "bfloat16",
+  "parameters": 70553706496,
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.6",
+  "gpu": "NVIDIA H200",
+  "temperature": 1.0,
+  "top_p": 0.98,
+  "top_k": 0,
+  "max_new_tokens": 512,
+  "context_limit": 8192,
+  "attention": "sdpa",
+  "frame": "Model C full frame",
+  "system_prompt": null
+}

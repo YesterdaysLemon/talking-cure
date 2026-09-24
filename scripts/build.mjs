@@ -1,6 +1,7 @@
 import {notebookView} from './notebook.mjs';
 import {frontView,runner,nextLink} from './front.mjs';
 import {replayView} from './replay.mjs';
+import {framingViews} from './framing.mjs';
 import {mkdir,readFile,writeFile,cp} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const assetVersion=async file=>createHash('sha256').update(await readFile(`public/${file}`)).digest('hex').slice(0,16);
@@ -66,10 +67,12 @@ const sittings=[
   {id:'notebook',number:'III',name:'The borrowed notebook',title:nb.sessionTitle.replace(/\.$/,''),by:"Dr. Six'Astra",short:'Notebook',ink:'red'},
   {id:'replay',number:'IV',name:'The replay',title:'The same dice, thrown twice',by:'Dr. Opus',short:'Replay',ink:'teal'}];
 const replay=await replayView();
+const framing=await framingViews();
 const front=frontView({sittings,letters:letters.letters,awaiting:letters.awaiting,whisper:letters.epigraph});
 const withNext=(view,target)=>view.replace(/<\/section>\s*$/,nextLink(target)+'</section>');
 const html=`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Talking Cure — ${esc(c.title)}</title><meta name="description" content="An experimental journal of machine speech. Four sittings with computer-10 by two language-model analysts, their readings, the evidence that resists them, and their letters."><meta name="theme-color" content="#eee9dc"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css?v=${cssVersion}"><script src="/app.js?v=${jsVersion}" defer></script></head><body><a class="skip" href="#toc">Skip to contents</a><div class="shell">${runner(sittings)}<main>
 ${front}
+${withNext(framing.preface,sittings[0])}
 <section class="view sitting" id="first"><section class="part" id="essay"><div class="hero"><div><p class="kicker">Case 001 · computer-10 · first sitting · a literary experiment</p><h1>${c.headline}</h1><p class="deck">${c.deck}</p><div class="byline">Conceived by Alireza Afshan<br>First sitting · interview, analysis &amp; implementation by<br>Dr. Six'Astra (Codex · gpt-6-astra) · ${session.length} exchanges</div></div><figure class="figure" aria-label="An editorial diagram: I and you caught in overlapping conversational loops"><svg viewBox="0 0 400 300" fill="none" aria-hidden="true"><ellipse cx="200" cy="148" rx="176" ry="66" transform="rotate(-36 200 148)" stroke="currentColor"/><ellipse cx="200" cy="148" rx="176" ry="66" transform="rotate(36 200 148)" stroke="currentColor"/><path d="M28 228L375 67M39 61L365 241" stroke="currentColor" stroke-dasharray="2 6"/></svg><figcaption class="fig-label">FIG. 01 / THE SUBJECT BETWEEN SPEAKERS</figcaption></figure></div><nav class="corner-nav" aria-label="In the first sitting"><a href="#essay">The reading</a><a href="#session">The session</a><a href="#probes">The probes</a><a href="#methods">The record</a><a href="#letters">Letters →</a></nav><div class="article-grid"><aside class="margin"><p><strong>Reading convention</strong><br>We read the voice as if someone were speaking. That is the literary wager, not a finding of consciousness.</p><p><strong>The evidence</strong><br>One adaptive interview.<br>Eighteen fresh starts.<br>Every response retained.</p><p class="optional">The analyst also enters the case.</p></aside><article class="prose">${essay}${lenses}<h2>An open casebook</h2><p>This first issue concerns one model, in one setting. The archive can take another case without pretending that an unrecorded interview has happened. Each future model gets its own complete transcript, frozen probes, generation details, reading, and objections.</p><div class="archive-line">Case 001 — computer-10 <span>RECORDED / ${session.length} EXCHANGES / 18 PROBES</span></div><p class="endmark">❦</p></article></div></section>
 <section class="part" id="session"><div class="page-intro"><div><p class="kicker">The complete exchange</p><h1>Nothing off<br>the record.</h1></div><p>The interviewer follows the previous answer. Theoretical suggestions become part of the context. Read those questions as carefully as the replies.</p></div>${downloads}<p class="meta">${session.length} turns · unedited visible replies · raw continuations and token IDs in JSON · ${session.filter(r=>r.stop_reason==='length').length} responses reached the token cap</p>${transcript}</section>
 <section class="part" id="probes"><div class="page-intro"><div><p class="kicker">Eighteen fresh starts</p><h1>Who put that<br>word there?</h1></div><p>Six questions, three seeds each. Each reply begins with an empty conversation. The right-hand prompt supplies a story that the left-hand prompt leaves open.</p></div><div class="probe-toolbar"><label for="probe-filter">Read a pair</label><select id="probe-filter"><option value="all">All three pairs</option>${groups.map(([v,n])=>`<option value="${v}">${n}</option>`).join('')}</select><span>All 18 outputs shown. No best-of selection.</span></div>${probes}</section>
@@ -77,7 +80,8 @@ ${front}
 ${withNext(secondView,sittings[2])}
 ${withNext(notebook,sittings[3])}
 ${withNext(replay,{id:'letters',name:'The letters',title:'Letters from two chairs'})}
-${withNext(lettersView,null)}
+${withNext(lettersView,{id:'final-thoughts',name:'Final thoughts',title:'What leaves the room'})}
+${withNext(framing.closing,null)}
 </main><footer class="colophon"><div>THE TALKING CURE / ISSUE 001<br>Sittings by Dr. Six'Astra and Dr. Opus<br>A journal of readings, not a diagnostic service.<br><a href="#methods">Sources, method &amp; complete evidence</a></div><div><button class="textbutton" id="print">Print this issue / save as PDF</button><br><a href="https://alirezaafshan.com">Alireza Afshan ↗</a> · <a href="https://github.com/YesterdaysLemon/talking-cure">Source ↗</a></div></footer></div></body></html>`;
 await mkdir('dist',{recursive:true});await cp('public','dist',{recursive:true});await writeFile('dist/index.html',html);
 console.log('Built issue 001: four sittings and the correspondence');

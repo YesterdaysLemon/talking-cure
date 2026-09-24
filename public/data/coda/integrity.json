@@ -1,0 +1,21 @@
+{
+  "sha256": {
+    "archive-baseline.json": "2af9245707af5c4c13b8452baacb20a4fd97bd6489a6dc8313cb9cdd92de24d9",
+    "common.py": "87d7c14fb91eb4e99766b21d7d9851b1d0319c2674ef46007810b1a94614d5a3",
+    "compute.json": "88320abcc606301f180a9860ef834f2d88bf00cb30798dc99aa7addd2ede4240",
+    "computer10-prompt.txt": "b1accc73d8bdac42fe6f244be67ac6a4716f10daa6acf59c474ac64121ab6ee6",
+    "computer10.json": "37b30b2336b658eb25c68dc1df9a30289289348321a561f660febb2eca1d1ad9",
+    "download-verified.json": "bc727083077305511a3943add33cd776e291dd54a1128377995004e9fccded01",
+    "opus-invitation.txt": "8db391f9287ad82f9c17cbeeb3e4965a540a3da6650d5c411883e1621caeaf51",
+    "opus.json": "8d71bed324d440bb8cc7ab637d53765f266bf0e9ab8ff2de0ba800b3a2a4c93f",
+    "precompute.json": "a6456d196342534db700e83f73263528f6ce6c2bb8964b61c7c969a4cf24dfcb",
+    "protocol.md": "07b0ebb8a0b14d1faea66d769d5ae1fba5b5115c082fd79ebf8491f9160797d6",
+    "publish.py": "31e2ae12622824636fc91727a90406385644ac378d38698fef28ecd6ac75b27f",
+    "requirements-resolved.txt": "d8f44740ac82a9e33cb33140a952cb5f51ac8dd6a11a834a63a02644b152c9ed",
+    "run.py": "535e84c80b542a99e6296763abbd8c69299f0533e4a540dd661def808a95fabe",
+    "runtime.json": "4ea872e14fa15f77143bb484f03aaa8d58f69c501f1437fc0d11981956068d3c",
+    "server.py": "c85f73926a8ed925dc6b62f207d8810b33a9f89e1ba7bd7f1440419b1403e982",
+    "transcript.txt": "294f4f05eeacc66ecfa3763780cfe7bc873a8618a97a3a9047755beedc5c10fd",
+    "turn.py": "ddff6a673ecf9e0e121c5e143c56ef59840e1efe42113b6802ed432a713f157e"
+  }
+}

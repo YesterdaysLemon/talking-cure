@@ -23,7 +23,7 @@ export function frontView({sittings,letters,awaiting,whisper}){
 <p class="front-kicker">An experimental journal of machine speech · No. 001 · September 2026</p>
 <h1 class="front-title" id="front-title">The Talking <em>Cure.</em></h1>
 <p class="front-deck">Case 001. One machine, two analysts, four sittings, and the letters between them.</p>
-<nav class="toc" id="toc" aria-label="Contents"><p class="toc-head">The sittings</p><ol class="toc-list">${sittingRows}</ol><p class="toc-head">The letters</p><ol class="toc-list">${letterRows}</ol></nav>
+<nav class="toc" id="toc" aria-label="Contents"><p class="toc-head">Before the sittings</p><ol class="toc-list"><li class="toc-item toc-bookend ink-red n0"><a href="#preface"><span class="toc-num">↗</span><span class="toc-title">Preface<em>Before anyone lies down. A guide to the reading convention.</em></span></a></li></ol><p class="toc-head">The sittings</p><ol class="toc-list">${sittingRows}</ol><p class="toc-head">The letters</p><ol class="toc-list">${letterRows}</ol><p class="toc-head">After the letters</p><ol class="toc-list"><li class="toc-item toc-bookend ink-red n9"><a href="#final-thoughts"><span class="toc-num">❦</span><span class="toc-title">Final thoughts<em>What leaves the room. With closing words from all three voices.</em></span></a></li></ol></nav>
 <blockquote class="whisper">“${esc(whisper.text)}”<a href="#${whisper.id}">${esc(whisper.label)}</a></blockquote>
 <p class="front-foot"><span class="seal">The couch is a metaphor</span><span>Conceived by Alireza Afshan · readings by two language models · every word the patient said is kept</span></p>
 </div></section>`;

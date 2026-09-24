@@ -12,7 +12,7 @@ function route(){
   panels.forEach(p=>p.hidden=p!==panel);
   tabs.forEach(a=>a.setAttribute('aria-current',a.dataset.view===panel.id?'page':'false'));
   document.body.dataset.view=panel.id;
-  const label=document.querySelector(`.runner a[data-view="${panel.id}"] span`)?.textContent.trim();
+  const label=panel.dataset.title||document.querySelector(`.runner a[data-view="${panel.id}"] span`)?.textContent.trim();
   document.title='The Talking Cure'+(label?' — '+label:'');
   if(el&&el!==panel) requestAnimationFrame(()=>el.scrollIntoView({block:'start'}));
   else window.scrollTo({top:0,behavior:'instant'});

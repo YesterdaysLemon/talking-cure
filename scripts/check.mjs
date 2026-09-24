@@ -1,4 +1,5 @@
 import {checkNotebook} from './check-notebook.mjs';
+import {checkCoda} from './check-coda.mjs';
 import {checkReplay} from './check-replay.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -89,3 +90,4 @@ console.log('PASS: both sittings: complete records, chain of context, probe cove
 
 await checkNotebook();
 await checkReplay();
+await checkCoda();

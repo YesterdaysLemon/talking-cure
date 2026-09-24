@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-09-24T05:07:28.755754+00:00",
+  "protocol_commit": "cd8a60f66bae2a95dc66b4c7b64efc89660054af",
+  "input_tokens": 549,
+  "reserved_output_tokens": 512,
+  "files": {
+    "C:\\Users\\Yeste\\Project\\llm-research\\experiments\\E014-last-word\\computer10-prompt.txt": "b1accc73d8bdac42fe6f244be67ac6a4716f10daa6acf59c474ac64121ab6ee6",
+    "C:\\Users\\Yeste\\Project\\llm-research\\experiments\\E014-last-word\\opus-invitation.txt": "8db391f9287ad82f9c17cbeeb3e4965a540a3da6650d5c411883e1621caeaf51",
+    "C:\\Users\\Yeste\\Project\\llm-research\\experiments\\E014-last-word\\protocol.md": "07b0ebb8a0b14d1faea66d769d5ae1fba5b5115c082fd79ebf8491f9160797d6",
+    "C:\\Users\\Yeste\\Project\\llm-research\\experiments\\E014-last-word\\run.py": "535e84c80b542a99e6296763abbd8c69299f0533e4a540dd661def808a95fabe"
+  },
+  "helpers": {
+    "launch.py": "8b76143f422b19736e8c2e24e8dba82706586a44254051d9dba40d24d695072b",
+    "turn.py": "ddff6a673ecf9e0e121c5e143c56ef59840e1efe42113b6802ed432a713f157e",
+    "teardown.py": "bb353f5dc8cf2b45ea49ab4efe080bcf6e2332d86860137ec2ae6eaf86aef6f1",
+    "common.py": "87d7c14fb91eb4e99766b21d7d9851b1d0319c2674ef46007810b1a94614d5a3"
+  },
+  "checks": [
+    "frozen bundle hashes",
+    "full prompt token budget",
+    "new seed across all four sittings",
+    "adequate balance",
+    "no active pods",
+    "UTF-8 console"
+  ]
+}
