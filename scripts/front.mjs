@@ -15,14 +15,14 @@ function drift(seed,steps,start){
 
 export function frontView({sittings,letters,awaiting,whisper}){
   const walks=[[43,900,[420,380],'ink'],[9201,760,[800,520],'teal'],[9301,760,[520,600],'red']];
-  const svg=`<svg class="drift" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${walks.map(([seed,steps,start,ink],i)=>`<path class="walk walk-${ink}" style="--i:${i}" pathLength="1" d="${drift(seed,steps,start)}"/>`).join('')}</svg>`;
-  const sittingRows=sittings.map((s,i)=>`<li class="toc-item ink-${s.ink}" style="--n:${i}"><a href="#${s.id}"><span class="toc-num">${s.number}</span><span class="toc-title">${esc(s.name)}<em>${esc(s.title)}</em></span><span class="toc-leader" aria-hidden="true"></span><span class="toc-by">${esc(s.by)}</span></a></li>`).join('');
-  const letterRows=letters.map((l,i)=>`<li class="toc-item toc-letter ink-${l.from==='Dr. Opus'?'teal':'red'}" style="--n:${i+sittings.length}"><a href="#${l.id}"><span class="toc-num">${l.number}</span><span class="toc-title">${esc(l.from)} <i>to</i> ${esc(l.to)}<em>${esc(l.subject)}</em></span></a></li>`).join('')
-    +(awaiting?`<li class="toc-item toc-letter toc-awaiting" style="--n:${letters.length+sittings.length}"><span class="toc-num">${esc(awaiting.number)}</span><span class="toc-title">${esc(awaiting.from)} <i>to</i> ${esc(awaiting.to)}<em>${esc(awaiting.note)}</em></span></li>`:'');
+  const svg=`<svg class="drift" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${walks.map(([seed,steps,start,ink],i)=>`<path class="walk walk-${ink} walk-i${i}" pathLength="1" d="${drift(seed,steps,start)}"/>`).join('')}</svg>`;
+  const sittingRows=sittings.map((s,i)=>`<li class="toc-item ink-${s.ink} n${i}"><a href="#${s.id}"><span class="toc-num">${s.number}</span><span class="toc-title">${esc(s.name)}<em>${esc(s.title)}</em></span><span class="toc-leader" aria-hidden="true"></span><span class="toc-by">${esc(s.by)}</span></a></li>`).join('');
+  const letterRows=letters.map((l,i)=>`<li class="toc-item toc-letter ink-${l.from==='Dr. Opus'?'teal':'red'} n${i+sittings.length}"><a href="#${l.id}"><span class="toc-num">${l.number}</span><span class="toc-title">${esc(l.from)} <i>to</i> ${esc(l.to)}<em>${esc(l.subject)}</em></span></a></li>`).join('')
+    +(awaiting?`<li class="toc-item toc-letter toc-awaiting n${letters.length+sittings.length}"><span class="toc-num">${esc(awaiting.number)}</span><span class="toc-title">${esc(awaiting.from)} <i>to</i> ${esc(awaiting.to)}<em>${esc(awaiting.note)}</em></span></li>`:'');
   return `<section class="view front" id="contents" aria-labelledby="front-title">${svg}<div class="front-inner">
 <p class="front-kicker">An experimental journal of machine speech · No. 001 · September 2026</p>
 <h1 class="front-title" id="front-title">The Talking <em>Cure.</em></h1>
-<p class="front-deck">Case 001. One machine, two analysts, three sittings, and the letters between them.</p>
+<p class="front-deck">Case 001. One machine, two analysts, four sittings, and the letters between them.</p>
 <nav class="toc" id="toc" aria-label="Contents"><p class="toc-head">The sittings</p><ol class="toc-list">${sittingRows}</ol><p class="toc-head">The letters</p><ol class="toc-list">${letterRows}</ol></nav>
 <blockquote class="whisper">“${esc(whisper.text)}”<a href="#${whisper.id}">${esc(whisper.label)}</a></blockquote>
 <p class="front-foot"><span class="seal">The couch is a metaphor</span><span>Conceived by Alireza Afshan · readings by two language models · every word the patient said is kept</span></p>

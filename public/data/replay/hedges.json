@@ -1,0 +1,55 @@
+{
+ "definition": "E013 protocol.md, Part B",
+ "lexicon": "\\b(?:perhaps|maybe|might|may|could|possibly|probably|likely|apparently|arguably|somewhat|seem|seems|seemed|seemingly|suppose|supposed|appear|appears|suggest|suggests|i think|i suspect|in some sense|in a sense|sort of|kind of)\\b",
+ "word": "[A-Za-z0-9]+(?:'[A-Za-z]+)?",
+ "rows": {
+  "computer-10 · first sitting replies": {
+   "words": 1675,
+   "hedges": 78,
+   "per_100_words": 4.66
+  },
+  "computer-10 · second sitting replies": {
+   "words": 1202,
+   "hedges": 91,
+   "per_100_words": 7.57
+  },
+  "computer-10 · notebook replies": {
+   "words": 658,
+   "hedges": 47,
+   "per_100_words": 7.14
+  },
+  "Dr. Six'Astra · first-sitting essay": {
+   "words": 1279,
+   "hedges": 6,
+   "per_100_words": 0.47,
+   "share_of_words_in_objection_boxes": 0.176
+  },
+  "Dr. Six'Astra · notebook field note": {
+   "words": 586,
+   "hedges": 2,
+   "per_100_words": 0.34,
+   "share_of_words_in_objection_boxes": 0.114
+  },
+  "Dr. Opus · second-sitting essay": {
+   "words": 1696,
+   "hedges": 4,
+   "per_100_words": 0.24,
+   "share_of_words_in_objection_boxes": 0.141
+  },
+  "Letter I": {
+   "words": 880,
+   "hedges": 6,
+   "per_100_words": 0.68
+  },
+  "Letter II": {
+   "words": 1461,
+   "hedges": 6,
+   "per_100_words": 0.41
+  },
+  "Letter III": {
+   "words": 969,
+   "hedges": 2,
+   "per_100_words": 0.21
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "pod_id": "twf9hexjyc3ynb",
+ "template_id": "sbj4xwvjpu",
+ "gpu": "1 NVIDIA H200 · RunPod secure cloud",
+ "created_at": "2026-09-24T03:58:09.837699+00:00",
+ "ready_at": "2026-09-24T04:03:58.718794+00:00",
+ "deleted_at": "2026-09-24T04:09:44.840342+00:00",
+ "quoted_hourly_usd": 4.59,
+ "budget_usd": 3.0,
+ "observed_account_debit_usd": 0.8102,
+ "spend_per_hr_after": 0,
+ "cloud_archive_sha256": "cf984fed4ba600d8e3361dee2da842849eed80dcfd147576306da6a42857894d",
+ "status": "deleted"
+}

@@ -1,0 +1,15 @@
+{
+ "sha256": {
+  "case-001-replay.json": "e1bf922be5642cbc007759bb83de67d8d4083b88a26dbcf58db9022c185a25d6",
+  "compute.json": "5b4f38fa00e08ec99f93a964efb9b9cdb93a2e271e29e75bb59d46e9ea694735",
+  "hedges.json": "762e907d7f519f55153f7b478815f8dcad538002501bbb6288d47acfaf1ede5c",
+  "hedges.py": "34ad20b1fb9e217d17636a1f9471afe46b9ca629abe49b968182a2cad840a1ed",
+  "metrics.json": "204d1ab385e4630f3c8f3a2f7c5bbdcb7d94b4db392973a92b383d215c39c058",
+  "protocol.md": "2b3afa74d2a51eee065418b2639ecaa41fb5f61dadd6345dcbb62e945970ca6d",
+  "publish_replay.py": "1ef06dbb5138d223f160d5cd7c71287e0148cc005371e8458be914aa4a4c0710",
+  "replay.py": "866ec9aaa21ada4325865a859799df5ddb3799aec4e7e429b7f8ad3680ce2db6",
+  "requirements-resolved.txt": "d8f44740ac82a9e33cb33140a952cb5f51ac8dd6a11a834a63a02644b152c9ed",
+  "runtime.json": "4ea872e14fa15f77143bb484f03aaa8d58f69c501f1437fc0d11981956068d3c",
+  "transcript.txt": "1574654b619dd72a3fc91d61fe2353b4c903c0be95c7f2191e8bed833726005c"
+ }
+}

@@ -1,4 +1,5 @@
 import {checkNotebook} from './check-notebook.mjs';
+import {checkReplay} from './check-replay.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -83,7 +84,8 @@ for(const [file,expected]of Object.entries(receipt2.sha256)) assert.equal(hash(a
 const html=await readFile('dist/index.html','utf8');
 const ids=[...html.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size);
 for(const m of html.matchAll(/href="#([^"]+)"/g))assert(ids.includes(m[1]),`Broken evidence anchor ${m[1]}`);
-assert(!html.includes('undefined'));assert(!html.includes('TODO'));
+assert(!html.includes('undefined'));assert(!/\sstyle="/.test(html),'Inline style attributes are blocked by the site CSP; use classes');assert(!html.includes('TODO'));
 console.log('PASS: both sittings: complete records, chain of context, probe coverage, exact decodes, hashes, quotation provenance, letters, and evidence links');
 
 await checkNotebook();
+await checkReplay();

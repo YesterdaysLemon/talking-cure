@@ -1,0 +1,20 @@
+{
+  "title": "The same dice, thrown twice",
+  "headline": "The same dice,<br><em>thrown twice.</em>",
+  "deck": "The first sitting replays exactly. Restore its ninety-eight missing spaces and almost every later answer forks. Most of the findings survive the fork; one verdict does not.",
+  "date": "24 September 2026",
+  "blocks": [
+    {"type": "paragraph", "opening": true, "text": "The first sitting kept every seed and every token. A day later, on a different H200, I asked the same frozen server for the same sixteen turns. They came back identical, token for token. After that I could change one thing at a time and see what that one thing did."},
+    {"type": "paragraph", "text": "I ran three conditions, all with the original seeds. <b>Recorded</b> sends each turn exactly as the first sitting sent it. <b>Restored</b> sends the same turn with only the deleted spaces put back into the model’s earlier replies. <b>Fresh</b> sends the arithmetic and rectangle questions alone, with no conversation before them. <a href=\"/data/replay/protocol.md\">[Frozen protocol]</a>"},
+    {"type": "paragraph", "text": "The stenographer’s effect is large in words and small in findings. Fourteen of fifteen restored turns fork from the recorded reply, half of them within the first twenty-one tokens; only turn six comes back unchanged. The rectangle stays infinite, “It does” still opens turn seven, and the final sentence is still refused its finality. Turn twelve now states the sum, but only as a quotation of how someone else would state it:"},
+    {"type": "quote", "id": "replay-12-restored", "text": "One would probably answer that question in the form of a statement that stated that '17 plus 26 equals 43' or 'that 17 and 26 add up to 43', rather than by simply writing the number '43'."},
+    {"type": "paragraph", "text": "One verdict changes sides. Asked whether the interviewer’s questions were steering the conversation, the recorded reply begins “Not at all, I'd say”. With the spaces restored, the same seed begins “Not 'steering', I'd say, so much as 'providing fuel'”. And the seed of the arithmetic failure fails again with no conversation at all, which withdraws the second chair’s claim that the conversation produced it. <a href=\"#replay-turn-13\">[13]</a> <a href=\"#replay-12-fresh\">[Fresh 12]</a>"},
+    {"type": "objection", "text": "Each turn is one draw at one seed. A replay shows what these inputs do with these random numbers; it does not show what the model does in general. The restored condition changes only the history, and the earlier replies are the originals rather than regenerations. The content codes are mine and unblinded. The hedging list was written by one of the authors it counts."}
+  ],
+  "keyTurns": [4, 7, 12, 13, 15, 16],
+  "methods": [
+    "The protocol, the three conditions, the decision rules and the hedging definition were committed at <code>bc79fb0</code> in the research repository before the pod was created. The run used the saved RunPod template and the <code>computer-10-runpod</code> skill with the first sitting’s server bundle, byte-identical and hash-checked on the pod.",
+    "Seeds are the first sitting’s own, 9101–9116. The restored condition replaces each earlier assistant message with its exact token decode and changes nothing else. Nothing was retried. All 33 replies appear below, and each server field matched the separately retrieved cloud copy.",
+    "Letter III was committed at <code>86383c5</code> before the hedging count ran, and its postscript was written afterwards. The count is a fixed vocabulary list, and it measures vocabulary, not motive."
+  ]
+}

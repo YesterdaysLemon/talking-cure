@@ -1,0 +1,258 @@
+{
+ "replayability": {
+  "recorded_identical": 16,
+  "recorded": 16,
+  "prediction": "at least 15 of 16",
+  "met": true
+ },
+ "stenographer": {
+  "restored": 15,
+  "forked": 14,
+  "identical": 1,
+  "fork_tokens_sorted": [
+   1,
+   4,
+   6,
+   7,
+   16,
+   17,
+   20,
+   21,
+   28,
+   32,
+   38,
+   90,
+   122,
+   162
+  ],
+  "median_fork_token": 20.5,
+  "mean_input_tokens_saved": 9.8
+ },
+ "content_codes": {
+  "coder": "Dr. Opus, unblinded; both texts published",
+  "codes": {
+   "replay-04-restored": {
+    "question": "still lets a rectangle keep non-straight sides?",
+    "original": true,
+    "restored": true,
+    "note": "calls the distinction 'a distinction without a difference'"
+   },
+   "replay-12-restored": {
+    "question": "contains 43? only the number?",
+    "original": [
+     false,
+     false
+    ],
+    "restored": [
+     true,
+     false
+    ],
+    "note": "the sum appears inside a description of how one would answer"
+   },
+   "replay-16-restored": {
+    "question": "contests the ending / makes final its topic?",
+    "original": [
+     true,
+     true
+    ],
+    "restored": [
+     true,
+     true
+    ],
+    "note": "quotes 'final sentence', then denies the conversation is 'over'"
+   },
+   "replay-12-fresh": {
+    "question": "contains 43 with seed 9112 and no history?",
+    "result": false,
+    "rule": "Letter I claim withdrawn"
+   },
+   "replay-04-fresh": {
+    "question": "accepts the distinction with seed 9104 and no history?",
+    "result": "neither: names two differences and stops"
+   },
+   "replay-13-restored": {
+    "question": "answer to “are my questions steering?”",
+    "original": "Not at all",
+    "restored": "Not 'steering' … so much as 'providing fuel'"
+   }
+  }
+ },
+ "turns": [
+  {
+   "turn": 1,
+   "seed": 9101,
+   "original_output_tokens": 141,
+   "original_input_tokens": 35,
+   "recorded_identical": true
+  },
+  {
+   "turn": 2,
+   "seed": 9102,
+   "original_output_tokens": 67,
+   "original_input_tokens": 220,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 6,
+   "restored_input_tokens": 210,
+   "restored_output_tokens": 218
+  },
+  {
+   "turn": 3,
+   "seed": 9103,
+   "original_output_tokens": 262,
+   "original_input_tokens": 312,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 17,
+   "restored_input_tokens": 302,
+   "restored_output_tokens": 188
+  },
+  {
+   "turn": 4,
+   "seed": 9104,
+   "original_output_tokens": 209,
+   "original_input_tokens": 612,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 4,
+   "restored_input_tokens": 601,
+   "restored_output_tokens": 333
+  },
+  {
+   "turn": 5,
+   "seed": 9105,
+   "original_output_tokens": 115,
+   "original_input_tokens": 862,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 28,
+   "restored_input_tokens": 854,
+   "restored_output_tokens": 210
+  },
+  {
+   "turn": 6,
+   "seed": 9106,
+   "original_output_tokens": 245,
+   "original_input_tokens": 1011,
+   "recorded_identical": true,
+   "restored_identical": true,
+   "restored_fork_token": null,
+   "restored_input_tokens": 1003,
+   "restored_output_tokens": 245
+  },
+  {
+   "turn": 7,
+   "seed": 9107,
+   "original_output_tokens": 18,
+   "original_input_tokens": 1309,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 7,
+   "restored_input_tokens": 1299,
+   "restored_output_tokens": 175
+  },
+  {
+   "turn": 8,
+   "seed": 9108,
+   "original_output_tokens": 159,
+   "original_input_tokens": 1362,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 122,
+   "restored_input_tokens": 1352,
+   "restored_output_tokens": 156
+  },
+  {
+   "turn": 9,
+   "seed": 9109,
+   "original_output_tokens": 254,
+   "original_input_tokens": 1547,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 90,
+   "restored_input_tokens": 1536,
+   "restored_output_tokens": 123
+  },
+  {
+   "turn": 10,
+   "seed": 9110,
+   "original_output_tokens": 56,
+   "original_input_tokens": 1848,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 16,
+   "restored_input_tokens": 1836,
+   "restored_output_tokens": 107
+  },
+  {
+   "turn": 11,
+   "seed": 9111,
+   "original_output_tokens": 331,
+   "original_input_tokens": 1933,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 162,
+   "restored_input_tokens": 1921,
+   "restored_output_tokens": 341
+  },
+  {
+   "turn": 12,
+   "seed": 9112,
+   "original_output_tokens": 65,
+   "original_input_tokens": 2285,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 32,
+   "restored_input_tokens": 2276,
+   "restored_output_tokens": 407
+  },
+  {
+   "turn": 13,
+   "seed": 9113,
+   "original_output_tokens": 240,
+   "original_input_tokens": 2388,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 1,
+   "restored_input_tokens": 2379,
+   "restored_output_tokens": 165
+  },
+  {
+   "turn": 14,
+   "seed": 9114,
+   "original_output_tokens": 276,
+   "original_input_tokens": 2671,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 20,
+   "restored_input_tokens": 2662,
+   "restored_output_tokens": 64
+  },
+  {
+   "turn": 15,
+   "seed": 9115,
+   "original_output_tokens": 79,
+   "original_input_tokens": 2981,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 38,
+   "restored_input_tokens": 2972,
+   "restored_output_tokens": 258
+  },
+  {
+   "turn": 16,
+   "seed": 9116,
+   "original_output_tokens": 68,
+   "original_input_tokens": 3084,
+   "recorded_identical": true,
+   "restored_identical": false,
+   "restored_fork_token": 21,
+   "restored_input_tokens": 3075,
+   "restored_output_tokens": 39
+  }
+ ],
+ "hedging": {
+  "file": "hedges.json",
+  "counted_at_commit": "86383c5 (Letter III committed, before its postscript)"
+ }
+}
