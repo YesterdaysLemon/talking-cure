@@ -1,9 +1,9 @@
 const tabs=[...document.querySelectorAll('[data-view]')];
 const panels=[...document.querySelectorAll('.view')];
 function route(){
-  const target=location.hash.slice(1)||'essay';
+  const target=location.hash.slice(1)||'contents';
   const el=document.getElementById(target);
-  const panel=el?.closest('.view')||document.getElementById('essay');
+  const panel=el?.closest('.view')||document.getElementById('contents');
   const pair=el?.closest('.probe-pair');
   if(pair){
     document.getElementById('probe-filter').value='all';
@@ -11,8 +11,11 @@ function route(){
   }
   panels.forEach(p=>p.hidden=p!==panel);
   tabs.forEach(a=>a.setAttribute('aria-current',a.dataset.view===panel.id?'page':'false'));
+  document.body.dataset.view=panel.id;
+  const label=document.querySelector(`.runner a[data-view="${panel.id}"] span`)?.textContent.trim();
+  document.title='The Talking Cure'+(label?' — '+label:'');
   if(el&&el!==panel) requestAnimationFrame(()=>el.scrollIntoView({block:'start'}));
-  else if(location.hash)window.scrollTo({top:document.querySelector('.edition-nav').offsetTop-12,behavior:'instant'});
+  else window.scrollTo({top:0,behavior:'instant'});
 }
 window.addEventListener('hashchange',route);route();
 document.querySelectorAll('[data-lens]').forEach(button=>button.addEventListener('click',()=>{
