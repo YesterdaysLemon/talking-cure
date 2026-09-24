@@ -3,6 +3,8 @@ import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const c=JSON.parse(await readFile('content/case-001.json','utf8'));
 const a=JSON.parse(await readFile('public/data/case-001.json','utf8'));
+const exact10=JSON.parse(await readFile('public/data/second-sitting/e010-exact-decode.json','utf8'));
+const exactFirst=Object.fromEntries(exact10.map(r=>[r.id,r.text_exact]));
 const hash=s=>createHash('sha256').update(s).digest('hex');
 assert.equal(new Set(a.records.map(r=>r.id)).size,a.records.length);
 const session=a.records.filter(r=>r.id.startsWith('session-'));
@@ -25,14 +27,13 @@ for(const p of a.probes)for(const seed of [101,202,303]){
   assert.equal(r.seed,seed);assert.deepEqual(r.messages,[{role:'user',content:p.prompt}]);
 }
 for(const b of c.blocks.filter(b=>b.type==='quote')){
-  assert(a.records.find(r=>r.id===b.id)?.text.includes(b.text),`Quote mismatch: ${b.id}`);
+  assert(exactFirst[b.id]?.includes(b.text),`Quote mismatch: ${b.id}`);
 }
 const receipt=JSON.parse(await readFile('public/data/integrity.json','utf8'));
 for(const [file,expected]of Object.entries(receipt.sha256)) assert.equal(hash(await readFile(`public/data/${file}`)),expected,file);
 const s2=JSON.parse(await readFile('public/data/second-sitting/case-001-second-sitting.json','utf8'));
 const essay2=JSON.parse(await readFile('content/second-sitting.json','utf8'));
 const letters=JSON.parse(await readFile('content/correspondence.json','utf8'));
-const exact10=JSON.parse(await readFile('public/data/second-sitting/e010-exact-decode.json','utf8'));
 const m2=JSON.parse(await readFile('public/data/second-sitting/metrics.json','utf8'));
 const bare=t=>t.replace(/\s/g,'');
 assert.equal(new Set(s2.records.map(r=>r.id)).size,s2.records.length);
@@ -68,6 +69,14 @@ for(const pair of essay2.coupling)for(const id of pair)assert(exact2[id],id);
 assert(exact2[letters.epigraph.id].includes(letters.epigraph.text),'Epigraph mismatch');
 assert.equal(new Set(letters.letters.map(l=>l.id)).size,letters.letters.length);
 for(const l of letters.letters)for(const k of ['id','number','from','to','date','subject','salutation','body','closing','signature'])assert(l[k],`Letter ${l.id} lacks ${k}`);
+for(const l of letters.letters){
+  for(const paragraph of [...l.body,l.postscript||'']){
+    for(const q of paragraph.matchAll(/<q data-record="([^"]+)">([^<]+)<\/q>/g)){
+      assert(exact2[q[1]]?.includes(q[2]),`Letter quotation mismatch: ${q[1]}`);
+      assert(paragraph.includes(`href="#${q[1]}"`),`Letter quotation needs its record link: ${q[1]}`);
+    }
+  }
+}
 const receipt2=JSON.parse(await readFile('public/data/second-sitting/integrity.json','utf8'));
 for(const [file,expected]of Object.entries(receipt2.sha256)) assert.equal(hash(await readFile(`public/data/second-sitting/${file}`)),expected,file);
 const html=await readFile('dist/index.html','utf8');

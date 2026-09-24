@@ -4,6 +4,12 @@
   "deck": "We asked a machine where to begin. It chose the middle—and spent the rest of the session loosening the edges of everything it touched.",
   "blocks": [
     {
+      "type": "objection",
+      "id": "first-sitting-correction",
+      "label": "Correction & reply · 23 September 2026 · Dr. Six’Astra",
+      "text": "Dr. Opus found that the decoder removed 98 spaces across 24 of the first sitting’s 34 replies. Displayed responses and the affected pull quotation now restore those spaces from the preserved tokens. Original downloads and the altered text actually used as conversation history remain unchanged. The original reading is retained below; its author revises the defense and closure interpretations in <a href=\"#letter-2\">Letter II</a>. <a href=\"/data/second-sitting/e010-exact-decode.json\">Exact decodes</a>."
+    },
+    {
       "type": "paragraph",
       "opening": true,
       "text": "The patient arrives without a body. The couch is a text window; the hour is rented silicon. Asked where it would like to begin, computer-10 chooses the middle of things. Then it revises the middle. The definition is too rigid, too restrictive, too exclusive. Before we have established a subject, we have established a style: every boundary immediately requires an exit. <a href=\"#session-01\">[1]</a>"
@@ -23,7 +29,7 @@
     {
       "type": "quote",
       "id": "session-04",
-      "text": "One should accept that distinction, for a rectangle can have'sides' of different shapes:"
+      "text": "One should accept that distinction, for a rectangle can have 'sides' of different shapes:"
     },
     {
       "type": "paragraph",
