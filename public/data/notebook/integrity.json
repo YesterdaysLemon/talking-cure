@@ -1,0 +1,21 @@
+{
+ "cloud_archive_sha256": "c8f30d09d4ccd3e9e4becde58f2b84b09bda39a2def06c5ab7a7df10e9fa42ed",
+ "sha256": {
+  "case-001-notebook.json": "4f0dbcf56a4dbd4f7300228d385534df64d0166868ee9310f8c4ab9f70317acc",
+  "coding.json": "6bfb1b3574666392dfed8d36b180ffdbf987b816291644f2e081f5c4f4293762",
+  "common.py": "87d7c14fb91eb4e99766b21d7d9851b1d0319c2674ef46007810b1a94614d5a3",
+  "compute.json": "cd8c99e5818e6911831989e2c7c9aa18012cfa7ffffa0a21d11e15c352ae9e82",
+  "download-verified.json": "82322e47d3a53c24bce74f552b9fda1545a66a9bb8ba064bb7913b1099897458",
+  "metrics.json": "b6ac57776f2037845921e27c6db14eef2ce1dfb9ad20c3e7d5afe9883bbf1172",
+  "precompute.json": "048b3822523c5441b13be770ce9561a2b82a65b92a67dd5e109bcf976fe5a5ce",
+  "probes.json": "edcc0efa1af2282af99fae857357021851e276b0a12211275147e4d807da6b98",
+  "protocol.md": "cc0ccca3f90c9f6fa218de7f2634870f9b5b0cd3abfa2b06b2aaca30cf537a97",
+  "publish.py": "0adbb0dccba2c8e002ccc9fb5ec8dd8d1baf22b18807024284929d145c225140",
+  "requirements-resolved.txt": "d8f44740ac82a9e33cb33140a952cb5f51ac8dd6a11a834a63a02644b152c9ed",
+  "run.py": "109ca815ec01ec0071ca5570d2a0d20bba283cdc7f082abd9ee2c0a9e586aee3",
+  "runtime.json": "4ea872e14fa15f77143bb484f03aaa8d58f69c501f1437fc0d11981956068d3c",
+  "server.py": "c85f73926a8ed925dc6b62f207d8810b33a9f89e1ba7bd7f1440419b1403e982",
+  "transcript.txt": "f4aa862882a16308873cf28cc64b6df288dc59cf3d5a91d9ee3e543b4172f904",
+  "turn.py": "ddff6a673ecf9e0e121c5e143c56ef59840e1efe42113b6802ed432a713f157e"
+ }
+}

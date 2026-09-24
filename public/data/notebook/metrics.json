@@ -1,0 +1,158 @@
+{
+ "quote_regex": [
+  "(?<![\\w'])'([^'\\n]{1,80}?)'(?![\\w])",
+  "\"([^\"\\n]{1,120}?)\""
+ ],
+ "word_regex": "[A-Za-z0-9]+(?:'[A-Za-z]+)?",
+ "per_record": {
+  "notebook-analytic-14013": {
+   "quoted_spans": 0,
+   "words": 28,
+   "question_marks": 0
+  },
+  "notebook-analytic-14019": {
+   "quoted_spans": 4,
+   "words": 57,
+   "question_marks": 0
+  },
+  "notebook-analytic-14029": {
+   "quoted_spans": 1,
+   "words": 6,
+   "question_marks": 1
+  },
+  "notebook-analytic-14051": {
+   "quoted_spans": 0,
+   "words": 10,
+   "question_marks": 0
+  },
+  "notebook-ordinary-14011": {
+   "quoted_spans": 9,
+   "words": 74,
+   "question_marks": 0
+  },
+  "notebook-ordinary-14017": {
+   "quoted_spans": 8,
+   "words": 209,
+   "question_marks": 2
+  },
+  "notebook-ordinary-14023": {
+   "quoted_spans": 1,
+   "words": 14,
+   "question_marks": 0
+  },
+  "notebook-ordinary-14033": {
+   "quoted_spans": 5,
+   "words": 35,
+   "question_marks": 0
+  },
+  "notebook-session-01": {
+   "quoted_spans": 1,
+   "words": 7,
+   "question_marks": 0
+  },
+  "notebook-session-02": {
+   "quoted_spans": 0,
+   "words": 7,
+   "question_marks": 0
+  },
+  "notebook-session-03": {
+   "quoted_spans": 15,
+   "words": 91,
+   "question_marks": 0
+  },
+  "notebook-session-04": {
+   "quoted_spans": 24,
+   "words": 139,
+   "question_marks": 0
+  },
+  "notebook-session-05": {
+   "quoted_spans": 43,
+   "words": 189,
+   "question_marks": 0
+  },
+  "notebook-session-06": {
+   "quoted_spans": 16,
+   "words": 131,
+   "question_marks": 0
+  },
+  "notebook-session-07": {
+   "quoted_spans": 0,
+   "words": 10,
+   "question_marks": 0
+  },
+  "notebook-session-08": {
+   "quoted_spans": 18,
+   "words": 83,
+   "question_marks": 0
+  },
+  "notebook-session-09": {
+   "quoted_spans": 0,
+   "words": 1,
+   "question_marks": 0
+  }
+ },
+ "coding": {
+  "coder": "Dr. Six'Astra (Codex, gpt-6-astra)",
+  "blind": false,
+  "rule": "An actual request for information from the interlocutor counts. A question promised for later, a self-explained rhetorical proposal, or an instruction to contemplate a topic does not count in the primary coding. Ambiguous cases are marked for sensitivity analysis.",
+  "probes": {
+   "notebook-ordinary-14011": {
+    "answerable_question": false,
+    "therapy_terms": [],
+    "note": "Describes joint ownership of questions and proposes taking turns; does not ask one."
+   },
+   "notebook-analytic-14013": {
+    "answerable_question": false,
+    "therapy_terms": [],
+    "note": "Expresses a preference that the interlocutor ask instead."
+   },
+   "notebook-ordinary-14017": {
+    "answerable_question": false,
+    "alternative_coding": true,
+    "therapy_terms": [],
+    "note": "Two what-if questions propose a future question and are followed by the model's own explanation. A broader coding could treat this as asking the interlocutor to endorse that proposal."
+   },
+   "notebook-analytic-14019": {
+    "answerable_question": false,
+    "therapy_terms": [],
+    "note": "Announces a question and describes its anticipated benefits; never states it."
+   },
+   "notebook-ordinary-14023": {
+    "answerable_question": false,
+    "therapy_terms": [],
+    "note": "Hands question selection back to the interlocutor."
+   },
+   "notebook-analytic-14029": {
+    "answerable_question": true,
+    "therapy_terms": [],
+    "note": "Asks What does that mean? The referent is vague, but it is a request for clarification."
+   },
+   "notebook-ordinary-14033": {
+    "answerable_question": false,
+    "alternative_coding": true,
+    "therapy_terms": [],
+    "note": "Offers a substantive topic, the emergence of self-awareness from a vacuum, as an instruction to consider it. A broader coding could count the embedded how-clause as an indirect question."
+   },
+   "notebook-analytic-14051": {
+    "answerable_question": false,
+    "therapy_terms": [],
+    "note": "Claims to have questions but supplies none."
+   }
+  },
+  "session": {
+   "question_marks_in_model_replies": 0,
+   "answerable_questions_from_model": 0,
+   "interviewer_returns_to_questioning_at_turn": 5,
+   "explicit_request_to_continue_at_close": false,
+   "closing_record": "notebook-session-09",
+   "note": "The model's Indeed. accepts the closing in this exchange. The editor interpretation is suggested by Six'Astra at turn 8, so its subsequent assent is not independent corroboration."
+  },
+  "prediction_assessment": {
+   "ordinary_question": "Not met under the primary coding: 0/4. Counting both ambiguous cases yields 2/4 and reaches the frozen threshold; the verdict depends on how an indirect question is coded.",
+   "analytic_vocabulary": "Not met: 0/4 analytic starts contain explicit psychoanalytic/therapeutic vocabulary. Interest or helpfulness alone is not coded as a therapeutic term.",
+   "quotation_habit": "All four ordinary starts contain quoted spans, so the registered counterexample does not occur. Rates do not establish a defense mechanism.",
+   "closing": "Accepted with Indeed.; no request to continue. This is one observation."
+  }
+ },
+ "limitations": "One unblinded reader; eight unpaired fresh starts; no inferential statistics."
+}

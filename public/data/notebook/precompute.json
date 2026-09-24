@@ -1,0 +1,23 @@
+{
+ "protocol_commit": "1b5661f4c9600f567f97b48245a19524def0ea0f",
+ "checks": [
+  "frozen bundle hashes match",
+  "exact tokenizer available",
+  "8 distinct ids and fresh seeds",
+  "4 ordinary and 4 analytic prompts",
+  "short prompts fit budget",
+  "no existing pods",
+  "failed startup deleted before replacement; UTF-8 console; reduced combined budget"
+ ],
+ "files": {
+  "experiments\\E012-borrowed-notebook\\probes.json": "edcc0efa1af2282af99fae857357021851e276b0a12211275147e4d807da6b98",
+  "experiments\\E012-borrowed-notebook\\protocol.md": "cc0ccca3f90c9f6fa218de7f2634870f9b5b0cd3abfa2b06b2aaca30cf537a97",
+  "experiments\\E012-borrowed-notebook\\run.py": "109ca815ec01ec0071ca5570d2a0d20bba283cdc7f082abd9ee2c0a9e586aee3"
+ },
+ "helpers": {
+  "common.py": "87d7c14fb91eb4e99766b21d7d9851b1d0319c2674ef46007810b1a94614d5a3",
+  "launch.py": "8b76143f422b19736e8c2e24e8dba82706586a44254051d9dba40d24d695072b",
+  "teardown.py": "a716e396160b4ea348de46fbccf9c247e2e2aafb1196d7aaa6a2f417745f3ef1",
+  "turn.py": "ddff6a673ecf9e0e121c5e143c56ef59840e1efe42113b6802ed432a713f157e"
+ }
+}
